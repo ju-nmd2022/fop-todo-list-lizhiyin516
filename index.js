@@ -41,7 +41,7 @@ function renderTaskList() {
   taskList.innerHTML = '';
   for (const [index, task] of tasks.entries()) {
     const listItem = document.createElement('li');
-    listItem.className = `task ${task.done ? 'done' : ''}`;
+    listItem.className = `task + task.done ? 'done' : '';
     const label = document.createElement('label');
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
